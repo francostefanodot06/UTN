@@ -1,0 +1,4 @@
+Lapicera,120.5,30
+Cuaderno,850.0,15
+Goma,45.25,50
+Tijera,150.75,20
