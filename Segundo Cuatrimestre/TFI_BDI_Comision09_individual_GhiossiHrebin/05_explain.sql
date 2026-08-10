@@ -1,0 +1,2 @@
+USE hardware_db;
+EXPLAIN SELECT * FROM ventas WHERE fecha BETWEEN '2026-01-01' AND '2026-06-01';
