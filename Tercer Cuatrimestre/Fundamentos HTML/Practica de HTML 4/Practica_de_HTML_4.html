@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing de Planes - TP2 HTML</title>
+</head>
+<body>
+    <!-- Actividad 2: semántica -->
+    <header>
+        <h1>Servicios Web Franco</h1>
+        <nav>
+            <ul>
+                <li><a href="#planes">Ver Planes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="planes">
+            <h2>Nuestros planes</h2>
+            <!-- Actividad 2: tabla -->
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th scope="col">Plan</th>
+                        <th scope="col">Precio (Mensual)</th>
+                        <th scope="col">Almacenamiento</th>
+                        <th scope="col">Soporte Técnico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Básico</th>
+                        <td>$10.000</td>
+                        <td>50 GB</td>
+                        <td>Solo Email</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Estándar</th>
+                        <td>$25.000</td>
+                        <td>200 GB</td>
+                        <td>Email y Chat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Premium</th>
+                        <td>$50.000</td>
+                        <td>Ilimitado</td>
+                        <td>24/7 Prioritario</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="contacto">
+            <h2>Contactanos</h2>
+            <!-- Actividad 1: formulario (solo estructural) -->
+            <form action="#" method="get">
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="motivo">Motivo de contacto:</label>
+                    <select id="motivo" name="motivo">
+                        <option value="ventas">Consulta de Ventas</option>
+                        <option value="soporte">Soporte Técnico</option>
+                        <option value="facturacion">Facturación y Pagos</option>
+                    </select>
+                </div>
+                <br>
+                <fieldset>
+                    <legend>Tipo de consulta</legend>
+                    <input type="radio" id="consulta_nueva" name="tipo_consulta" value="nueva">
+                    <label for="consulta_nueva">Es una consulta nueva</label><br>
+                    
+                    <input type="radio" id="consulta_seguimiento" name="tipo_consulta" value="seguimiento">
+                    <label for="consulta_seguimiento">Seguimiento de un caso anterior</label>
+                </fieldset>
+                <br>
+                <div>
+                    <label for="mensaje">Dejanos tu mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" id="terminos" name="terminos">
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                </div>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 - Desarrollo Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
