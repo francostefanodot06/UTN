@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Administración - Food Store</title>
+</head>
+<body>
+    <header>
+        <h1>Panel de Administración</h1>
+        <nav>
+            <a href="index.html">Volver a la Tienda</a> |
+            <a href="#">Cerrar Sesión</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Gestión de Productos</h2>
+        <a href="#">+ Nuevo Producto</a>
+        
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="assets/hamburguesa.jpg" alt="Hamburguesa Triple" width="50"></td>
+                    <td>Hamburguesa Triple</td>
+                    <td>Hamburguesas</td>
+                    <td>$25000</td>
+                    <td>12</td>
+                    <td><a href="#">Editar</a> | <a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="assets/pizza.jpg" alt="Pizza Muzzarella" width="50"></td>
+                    <td>Pizza Muzzarella</td>
+                    <td>Pizzas</td>
+                    <td>$18000</td>
+                    <td>5</td>
+                    <td><a href="#">Editar</a> | <a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="assets/papas.jpg" alt="Papas Fritas" width="50"></td>
+                    <td>Papas con Cheddar</td>
+                    <td>Papas Fritas</td>
+                    <td>$8000</td>
+                    <td>0</td>
+                    <td><a href="#">Editar</a> | <a href="#">Eliminar</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <details open>
+            <summary>Agregar Producto Rápido</summary>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre del Producto:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Lomito Completo"><br><br>
+
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio"><br><br>
+
+                <label for="stock">Stock Inicial:</label>
+                <input type="number" id="stock" name="stock"><br><br>
+
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria">
+                    <option value="">Seleccione una opción...</option>
+                    <option value="hamburguesas">Hamburguesas</option>
+                    <option value="pizzas">Pizzas</option>
+                    <option value="papas">Papas Fritas</option>
+                </select><br><br>
+                
+                <label for="descripcion">Descripción:</label><br>
+                <textarea id="descripcion" name="descripcion" placeholder="Ingresa los ingredientes..."></textarea><br><br>
+
+                <button type="submit">Guardar Producto</button>
+            </form>
+        </details>
+    </main>
+
+    <footer>
+        <p>Panel de Administración Food Store v1.0</p>
+    </footer>
+</body>
+</html>
