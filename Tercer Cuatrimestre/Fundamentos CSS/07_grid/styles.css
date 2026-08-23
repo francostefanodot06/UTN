@@ -1,0 +1,57 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Definición del grid */
+.grid-container {
+  display: grid;
+
+  /* 3 columnas: la primera de 150px, la segunda flexible (1fr) y la tercera de 150px */
+  grid-template-columns: 150px 1fr 150px;
+
+  /* 3 filas: dos fijas de 100px y una automática */
+  grid-template-rows: 200px 150px auto;
+
+  /* Centrar el contenido de las celdas */
+  justify-items: center; /* eje horizontal */
+  align-items: center; /* eje vertical */
+
+  gap: 10px; /* espacio entre celdas */
+  background: white;
+  padding: 10px;
+  border: 2px solid #333;
+}
+
+/* Estilos de los divs dentro del grid */
+.grid-container div {
+  background: #4a90e2;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* Ejemplo de posicionamiento manual */
+
+/* div-1 ocupa dos filas de alto */
+.div-1 {
+  grid-row-start: 1;
+  grid-row-end: 3; /* desde la fila 1 hasta la 3 → ocupa 2 filas */
+}
+
+/* div-2 ocupa dos columnas de ancho */
+.div-2 {
+  grid-column-start: 2;
+  grid-column-end: 4; /* desde columna 2 hasta la 4 → ocupa 2 columnas */
+}
