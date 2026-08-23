@@ -1,0 +1,122 @@
+/* Variables CSS solicitadas */
+:root {
+    --color-primario: #ff6347;
+    --color-fondo: #f0f0f0;
+    --color-texto: #333;
+    --color-blanco: #fff;
+    --color-borde: #ddd;
+    --color-focus: #ff4500;
+}
+
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centrado del formulario en la página (Flexbox) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Modelo de caja para el contenedor del login */
+.login-container {
+    background-color: var(--color-blanco);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Propiedades de texto */
+.login-title {
+    color: var(--color-primario);
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.login-subtitle {
+    font-size: 15px;
+    color: var(--color-texto);
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilizado de inputs (ancho 100%, borde y padding) */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-borde);
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Pseudoclase :focus para los inputs */
+.input-group input:focus {
+    border-color: var(--color-focus);
+}
+
+/* Estilizado del botón */
+.login-btn {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+/* Pseudoclase :hover para el botón */
+.login-btn:hover {
+    background-color: var(--color-focus);
+}
+
+/* Enlace de registro */
+.login-footer {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.login-footer a {
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    color: var(--color-primario);
+}
