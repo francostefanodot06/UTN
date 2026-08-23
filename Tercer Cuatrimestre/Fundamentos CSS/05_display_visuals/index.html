@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ejercicio: Modelo de Caja</title>
+    <!-- Enlazamos el archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Display y Visibilidad en CSS</h1>
+    </header>
+    <main>
+
+        <!-- Ejemplo de display block -->
+        <section>
+            <h2>Display block</h2>
+            <div class="contenedor">
+                <div class="caja_block">A</div>
+                <div class="caja_block caja_block1">B</div>
+                <div class="caja_block">C</div>
+            </div>
+        </section>
+
+        <!-- Ejemplo de display inline -->
+        <section>
+            <h2>Display Inline</h2>
+            <div class="contenedor_inline">
+                <div class="caja_inline">A</div>
+                <div class="caja_inline">Bbb</div>
+                <div class="caja_inline">Cccccccccccccc</div>
+            </div>
+        </section>
+
+        <!-- Ejemplo de display inline-block -->
+        <section>
+            <h2>Display Inline block</h2>
+            <div class="contenedor_inline_block">
+                <div class="caja_inline_block">A</div>
+                <div class="caja_inline_block caja1_inline_block">B</div>
+                <div class="caja_inline_block">C</div>
+            </div>
+        </section>
+
+        <!-- Comparación display none vs visibility hidden -->
+        <section>
+            <h2>Display none vs visibility hidden</h2>
+            <div>
+                <div class="none"></div>
+                <div class="hidden"></div>
+            </div>
+        </section>
+        <!-- Ejemplo de transparencia con opacity -->
+        <section>
+            <h2>Transparencia en CSS</h2>
+            <div class="contenedor_opacity">
+                <div class="caja1_opacity"></div>
+                <div class="caja2_opacity"></div>
+                <div class="caja3_opacity"></div>
+            </div>
+        </section>
+
+        <!-- Ejemplo de superposición con z-index -->
+        <section>
+            <h2>Zindex</h2>
+            <div class="caja_zIndex">
+                <div class="caja1_zIndex"></div>
+                <div class="caja2_zIndex"></div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
