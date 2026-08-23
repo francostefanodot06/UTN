@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0f2f5;
+}
+
+/* Paleta de colores globales y layout básico */
+header, footer {
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.featured-card, .product-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.price {
+  color: #2c9d5f;
+  font-weight: bold;
+}
+
+button {
+  background-color: #2c9d5f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Actividad 1: Flexbox */
+.featured-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.featured-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Actividad 2: Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
