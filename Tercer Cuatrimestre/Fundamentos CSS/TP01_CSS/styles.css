@@ -1,0 +1,39 @@
+/* Actividad 1: Selector de tipo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Actividad 2: Selector de id */
+#site-header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Actividad 2: Selector de clase */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Actividad 2: Selector descendiente */
+.card p {
+    color: #555555;
+}
+
+/* Habilidades */
+.skills li {
+    background-color: #2c9d5f;
+    color: #ffffff;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 4px;
+}
