@@ -1,0 +1,118 @@
+/* Reset mínimo y variables */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-band-color: #f3f5ff;
+  --bg-base-color: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --brand: #3b82f6;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text);
+  background-color: var(--bg-band-color);
+}
+
+/* Contenedor centrado que respeta la banda de fondo */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+.site-header,
+.site-footer {
+  padding-block: 1rem;
+}
+.site-title {
+  margin: 0;
+}
+.site-subtitle {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+}
+
+/* Grid responsivo */
+.gallery {
+  display: grid;
+  gap: 1rem;
+  /* default (≥1200): 4 columnas – lo reforzamos en media query por claridad */
+}
+
+/* Tarjetas semánticas */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.card__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+}
+.card__text {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+.card__btn {
+  border: 1px solid var(--brand);
+  background: transparent;
+  color: var(--brand);
+  padding: 0.5rem 0.9rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease,
+    color 0.15s ease;
+}
+.card__btn:hover {
+  background: var(--brand);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* --- Media Queries --- */
+
+/* Desktop grande: 4 columnas, banda 70% */
+@media (min-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Laptop/Tablet horizontal: 3 columnas, banda 60% */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card {
+    background-color: #225e1c;
+  }
+}
+
+/* Tablet vertical: 2 columnas, banda 50% */
+@media (min-width: 600px) and (max-width: 899px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    background-color: #d16262;
+  }
+}
+
+/* Móvil: 1 columna, banda al 100% (fondo liso) */
+@media (max-width: 599px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
