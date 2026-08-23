@@ -1,0 +1,117 @@
+/* ==============================
+   DISPLAY BLOCK
+   ============================== */
+.contenedor {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc; /* Fondo gris */
+}
+.caja_block {
+  /* Cada div ocupa toda la fila disponible */
+  display: block;
+  width: 180px;
+  height: 50px;
+  margin: 5px; /* Separación entre cajas */
+  background-color: rgb(107, 150, 107); /* Verde */
+}
+.caja_block1 {
+  height: 80px; /* Caja más alta */
+  width: 50px; /* Más angosta */
+}
+
+/* ==============================
+   DISPLAY INLINE
+   ============================== */
+.contenedor_inline {
+  width: 200px;
+  height: 50px;
+  background-color: #ccc;
+}
+.caja_inline {
+  display: inline; /* Ocupa solo el ancho de su contenido */
+  background: lightgreen;
+  margin: 5px; /* Ojo: margin vertical casi no se aplica en inline */
+}
+
+/* ==============================
+   DISPLAY INLINE-BLOCK
+   ============================== */
+.contenedor_inline_block {
+  width: 300px;
+  height: 150px;
+}
+.caja_inline_block {
+  display: inline-block; /* Se comporta como inline, pero respeta alto y ancho */
+  width: 50px;
+  height: 100px;
+  background-color: lightblue;
+  text-align: center; /* Centra el texto horizontalmente */
+  line-height: 100px; /* Centra el texto verticalmente */
+}
+.caja1_inline_block {
+  height: 150px;
+  width: 100px; /* Caja más grande para notar la diferencia */
+}
+
+/* ==============================
+   DISPLAY NONE vs VISIBILITY HIDDEN
+   ============================== */
+.none {
+  display: none; /* El elemento desaparece y NO ocupa espacio */
+}
+.hidden {
+  visibility: hidden; /* El elemento no se ve, pero sigue ocupando espacio */
+}
+
+/* ==============================
+   TRANSPARENCIA CON OPACITY
+   ============================== */
+/* ⚠️ Redefinición de .contenedor solo para este ejemplo */
+.contenedor_opacity {
+  width: 280px;
+  height: 90px;
+  background-color: #ccc;
+}
+.contenedor_opacity div {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+}
+.caja1_opacity {
+  opacity: 1; /* Opacidad completa */
+}
+.caja2_opacity {
+  opacity: 0.5; /* Semitransparente */
+}
+.caja3_opacity {
+  opacity: 0.2; /* Casi invisible */
+}
+
+/* ==============================
+   Z-INDEX
+   ============================== */
+.caja_zIndex {
+  position: relative; /* Necesario para posicionar hijos con absolute */
+  background-color: #ccc;
+  width: 100px;
+  height: 100px;
+}
+.caja1_zIndex {
+  position: absolute; /* Se coloca encima del flujo normal */
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  z-index: 2; /* Prioridad de apilamiento */
+  opacity: 0.8;
+}
+.caja2_zIndex {
+  background-color: blue;
+  position: absolute;
+  top: 20px; /* Lo movemos un poco hacia abajo */
+  left: 40px; /* Lo desplazamos a la derecha */
+  opacity: 0.8;
+  width: 50px;
+  height: 50px;
+  z-index: 4; /* Aparece por encima del rojo */
+}
