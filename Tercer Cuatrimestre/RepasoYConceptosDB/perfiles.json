@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "Ana Garcia",
+    "email": "ana@email.com",
+    "intereses": ["deportes", "viajes"],
+    "direccion": {
+      "ciudad": "Buenos Aires",
+      "domicilio": "Libertad 1500"
+    }
+  },
+  {
+    "nombre": "Carlos Lopez",
+    "email": "carlos@email.com",
+    "fecha_suscripcion": "2026-09-01T10:00:00Z",
+    "limite_credito": 50000
+  },
+  {
+    "razon_social": "Tech Solutions S.A.",
+    "email": "contacto@techsolutions.com",
+    "empleados": 150
+  }
+]
