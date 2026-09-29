@@ -32,7 +32,7 @@ const productos = [
     nombre: "Gaseosa Cola",
     descripcion: "Lata de 354ml bien fría",
     precio: 2500,
-    imagen: "assets/bebida.jpg", // Asegurate de tener una imagen guardada con este nombre en tu carpeta assets
+    imagen: "assets/coca.webp", // Asegurate de tener una imagen guardada con este nombre en tu carpeta assets
     categoria: "Bebidas"
   }
 ];
