@@ -1,11 +1,51 @@
-<!-- Dentro de tu <aside> -->
-<h2>Categorías</h2>
-<ul id="lista-categorias"></ul>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Store - Inicio</title>
+    <!-- Agregué el enlace a tu CSS que faltaba en el código que me pasaste -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Food Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Mis Pedidos</a></li>
+                <li><a href="#">Carrito</a></li>
+                <li><a href="admin.html">Panel Admin</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Dentro de tu <main> -->
-<h2>Productos Destacados</h2>
-<section id="contenedor-productos"></section>
+    <aside>
+        <h2>Categorías</h2>
+        <!-- Contenedor limpio con su ID -->
+        <ul id="lista-categorias"></ul>
+    </aside>
 
-<!-- Antes de cerrar el body, enlaza los scripts en este orden exacto -->
-<script src="./js/data.js"></script>
-<script src="./js/main.js"></script>
+    <main>
+        <form action="#" method="GET">
+            <label for="buscar">Buscar productos:</label>
+            <input type="text" id="buscar" name="buscar" placeholder="Ej. Hamburguesa...">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <section>
+            <h2>Productos Destacados</h2>
+            <!-- Contenedor limpio con su ID -->
+            <section id="contenedor-productos"></section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Food Store. Todos los derechos reservados.</p>
+        <p>Contacto: info@foodstore.com</p>
+    </footer>
+
+    <!-- Scripts enlazados antes de cerrar el body -->
+    <script src="./js/data.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
