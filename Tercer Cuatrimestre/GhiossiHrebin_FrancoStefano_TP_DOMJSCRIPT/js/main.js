@@ -1,5 +1,5 @@
 // A. Renderizar Categorías
-function cargarCategorias() {
+const cargarCategorias = () => {
     const contenedorCategorias = document.getElementById("lista-categorias");
     
     categorias.forEach(categoria => {
@@ -7,28 +7,27 @@ function cargarCategorias() {
         li.innerHTML = `<a href="#">${categoria}</a>`;
         contenedorCategorias.appendChild(li);
     });
-}
+};
 
 // B. Renderizar Productos
-function cargarProductos() {
+const cargarProductos = () => {
     const contenedorProductos = document.getElementById("contenedor-productos");
     
     productos.forEach(producto => {
         const article = document.createElement("article");
-        // Puedes agregar la clase CSS que usaste en tu TP anterior
-        article.classList.add("producto-card"); 
         
         article.innerHTML = `
-            <img src="${producto.imagen}" alt="${producto.nombre}">
+            <img src="${producto.imagen}" alt="${producto.nombre}" width="150">
             <h3>${producto.nombre}</h3>
             <p>${producto.descripcion}</p>
-            <p class="precio">$${producto.precio}</p>
-            <button onclick="alert('Agregaste el producto: ${producto.nombre}')">Agregar</button>
+            <p>Precio: <strong>$${producto.precio.toFixed(2)}</strong></p>
+            <a href="#">Ver Detalles</a>
+            <button type="button" onclick="alert('Agregaste el producto: ${producto.nombre}')">Agregar al Carrito</button>
         `;
         
         contenedorProductos.appendChild(article);
     });
-}
+};
 
 // Ejecutar las funciones para que se muestren en pantalla
 cargarCategorias();
