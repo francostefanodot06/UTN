@@ -1,19 +1,9 @@
-export interface Personaje {
-  id: number;
-  age: number;
-  birthdate: string;
-  gender: string;
-  name: string;
-  occupation: string;
-  portrait_path: string;
-  phrases: string[];
-  status: string;
-}
+import type { Personaje, RespuestaPersonajes } from '../types/personaje'
 
-export interface RespuestaPersonajes {
-  count: number;
-  next: string | null;
-  prev: string | null;
-  pages: number;
-  results: Personaje[];
+const URL_API = 'https://thesimpsonsapi.com/api/characters'
+
+export const obtenerPersonajes = async (): Promise<Personaje[]> => {
+  const respuesta = await fetch(URL_API)
+  const datos = (await respuesta.json()) as RespuestaPersonajes
+  return datos.results
 }
