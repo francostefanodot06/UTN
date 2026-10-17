@@ -19,6 +19,7 @@ const renderProducts = (productsToRender: IProduct[]) => {
     const card = document.createElement('div');
     card.className = 'product-card';
     card.innerHTML = `
+      <img src="/${product.image}" alt="${product.name}" style="max-width: 100%; border-radius: 5px; margin-bottom: 10px;">
       <h3>${product.name}</h3>
       <p>Precio: $${product.price}</p>
       <button class="add-to-cart-btn" data-id="${product.id}">Agregar al carrito</button>
