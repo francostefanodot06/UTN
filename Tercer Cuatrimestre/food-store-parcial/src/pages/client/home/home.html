@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Store - Catálogo</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 20px; background-color: #1e1e2e; color: #cdd6f4; }
+    .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+    .filters { display: flex; gap: 10px; margin-bottom: 20px; }
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+    .product-card { background: #313244; padding: 15px; border-radius: 8px; text-align: center; }
+    button { background: #89b4fa; color: #11111b; border: none; padding: 10px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+    button:hover { background: #b4befe; }
+    input, select { padding: 8px; border-radius: 5px; border: 1px solid #6c7086; background: #181825; color: #cdd6f4; }
+  </style>
 </head>
-
 <body>
-    <h1>Hola desde el cliente</h1>
-    <button id="logoutButton">Logout</button>
-    <script type="module" src="./home.ts"></script>
-</body>
+  <div class="header">
+    <h1>Food Store</h1>
+    <button id="go-to-cart">Ver Carrito 🛒</button>
+  </div>
 
+  <div class="filters">
+    <input type="text" id="search-input" placeholder="Buscar productos...">
+    <select id="category-filter">
+      <option value="all">Todas las categorías</option>
+    </select>
+  </div>
+
+  <div id="products-container" class="products-grid"></div>
+  <script type="module" src="./home.ts"></script>
+</body>
 </html>
