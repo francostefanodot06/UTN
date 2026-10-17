@@ -1,4 +1,4 @@
-import type { IProduct } from "../types/product";
+import type { IProduct } from "../types/IProduct";
 import type { ICategoria } from "../types/categoria";
 
 export const getCategories = (): ICategoria[] => {

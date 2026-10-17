@@ -1,6 +1,6 @@
 import { PRODUCTS, getCategories } from '../../../data/data';
 import { addToCart } from '../../../utils/cart';
-import { IProduct } from '../../../types/product';
+import type { IProduct } from '../../../types/product';
 
 const productsContainer = document.getElementById('products-container') as HTMLDivElement;
 const searchInput = document.getElementById('search-input') as HTMLInputElement;
@@ -70,8 +70,5 @@ categoryFilter.addEventListener('change', filterAndSearch);
 btnGoToCart.addEventListener('click', () => {
   window.location.href = '../cart/cart.html'; 
 });
-
-document.addEventListener('DOMContentLoaded', () => {
-  renderCategories();
-  renderProducts(PRODUCTS);
-});
+renderCategories();
+renderProducts(PRODUCTS);
