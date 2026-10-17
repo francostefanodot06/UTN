@@ -1,4 +1,4 @@
-import { IProduct, ICartItem } from "../types/IProduct";
+import type { IProduct, ICartItem } from "../types/product";
 
 const CART_KEY = "cart";
 
