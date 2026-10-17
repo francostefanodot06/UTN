@@ -1,5 +1,5 @@
-import { IProduct } from "/home/franker/Escritorio/UTN/Tercer Cuatrimestre/food-store-parcial/src/types/product";
-import { ICategoria } from "/home/franker/Escritorio/UTN/Tercer Cuatrimestre/food-store-parcial/src/types/categoria";
+import { IProduct } from "../types/IProduct";
+import { ICategoria } from "../types/ICategoria";
 
 export const getCategories = (): ICategoria[] => {
   return [

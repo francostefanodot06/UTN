@@ -1,6 +1,6 @@
 import { PRODUCTS, getCategories } from '../../../data/data';
 import { addToCart } from '../../../utils/cart';
-import { IProduct } from '../../../types/product';
+import { IProduct } from '../../../types/IProduct';
 
 const productsContainer = document.getElementById('products-container') as HTMLDivElement;
 const searchInput = document.getElementById('search-input') as HTMLInputElement;
