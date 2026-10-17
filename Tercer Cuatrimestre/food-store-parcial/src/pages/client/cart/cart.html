@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Store - Carrito</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; background-color: #1e1e2e; color: #cdd6f4; }
+    .cart-item { background: #313244; padding: 15px; margin-bottom: 10px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; }
+    button { background: #89b4fa; color: #11111b; border: none; padding: 10px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+    #total-container { margin-top: 20px; font-size: 1.5em; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Tu Carrito 🛒</h1>
+  <button id="back-to-home">Volver al Catálogo</button>
+  
+  <div id="cart-container" style="margin-top: 20px;"></div>
+  <div id="total-container"></div>
+  
+  <script type="module" src="./cart.ts"></script>
+</body>
+</html>
