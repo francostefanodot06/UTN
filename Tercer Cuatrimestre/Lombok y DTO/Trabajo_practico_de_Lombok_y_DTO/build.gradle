@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.utn'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Dependencias de Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+}
+
+test {
+    useJUnitPlatform()
+}
