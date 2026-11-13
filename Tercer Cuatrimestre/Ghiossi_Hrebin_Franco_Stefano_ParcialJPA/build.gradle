@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.tp'
+version = '1.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.hibernate.orm:hibernate-core:6.4.4.Final'
+    implementation 'com.h2database:h2:2.2.224'
+    compileOnly 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
+}
+
+application {
+    mainClass = 'com.tp.jpa.Main'
+}
+
+// Necesario para que el menú de consola pueda leer del teclado con `gradle run`
+run {
+    standardInput = System.in
+}
